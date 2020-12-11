@@ -71,7 +71,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
             //Creating and sending the task level of result to a stream to which anybody can subscribe
             createAndSendResult();
             if (widget.task.closeAfterFinished) {
-              Navigator.of(context).pop();
+              //Navigator.of(context).pop();
             }
             break;
           }
@@ -189,8 +189,9 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
       switch (step.runtimeType) {
         case RPQuestionStep:
           return AppBar(
+            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
 //            title: Text(recentTaskProgress != null ? "${recentTaskProgress?.current} ${locale?.translate('of') ?? 'of'} ${recentTaskProgress?.total}" : ""),
-            automaticallyImplyLeading: false,
+            automaticallyImplyLeading: true,
             actions: <Widget>[
               IconButton(
                 icon: Icon(
@@ -204,6 +205,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
           break;
         case RPFormStep:
           return AppBar(
+            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
 //            title: Text(recentTaskProgress != null ? "${recentTaskProgress?.current} ${locale?.translate('of') ?? 'of'} ${recentTaskProgress?.total}" : ""),
             automaticallyImplyLeading: false,
             actions: <Widget>[
@@ -219,7 +221,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
           break;
         case RPInstructionStep:
           return AppBar(
-            title: Text(locale?.translate(step.title) ?? step.title),
+            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
             automaticallyImplyLeading: false,
             actions: <Widget>[
               IconButton(

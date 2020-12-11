@@ -132,7 +132,7 @@ class _ChoiceButtonState extends State<_ChoiceButton> {
                   ? Container(
                       child: TextField(
                         onChanged: (newText) => choice.text = newText,
-                        decoration: InputDecoration(hintText: RPLocalizations.of(context).translate("Other")),
+                        decoration: InputDecoration(hintText: RPLocalizations?.of(context)?.translate("Other") ?? 'Other'),
                       ),
                     )
                   : Text(

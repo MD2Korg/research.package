@@ -69,7 +69,7 @@ class _RPUICompletionStepState extends State<RPUICompletionStep> with SingleTick
                 onPressed: () {
                   blocTask.sendStatus(StepStatus.Finished);
                 },
-                child: Text(RPLocalizations.of(context)?.translate('DONE') ?? "DONE"),
+                child: Text(RPLocalizations.of(context)?.translate('DONE') ?? "Proceed"),
               ),
             )
           ],
