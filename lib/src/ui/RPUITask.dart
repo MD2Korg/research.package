@@ -192,15 +192,15 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
             title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
 //            title: Text(recentTaskProgress != null ? "${recentTaskProgress?.current} ${locale?.translate('of') ?? 'of'} ${recentTaskProgress?.total}" : ""),
             automaticallyImplyLeading: true,
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(
-                  Icons.cancel,
-                  color: Theme.of(context).accentColor,
-                ),
-                onPressed: () => blocTask.sendStatus(StepStatus.Canceled),
-              )
-            ],
+            // actions: <Widget>[
+            //   IconButton(
+            //     icon: Icon(
+            //       Icons.cancel,
+            //       color: Theme.of(context).accentColor,
+            //     ),
+            //     onPressed: () => blocTask.sendStatus(StepStatus.Canceled),
+            //   )
+            // ],
           );
           break;
         case RPFormStep:
@@ -223,15 +223,15 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
           return AppBar(
             title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
             automaticallyImplyLeading: false,
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(
-                  Icons.cancel,
-                  color: Theme.of(context).accentColor,
-                ),
-                onPressed: () => blocTask.sendStatus(StepStatus.Canceled),
-              )
-            ],
+            // actions: <Widget>[
+            //   IconButton(
+            //     icon: Icon(
+            //       Icons.cancel,
+            //       color: Theme.of(context).accentColor,
+            //     ),
+            //     onPressed: () => blocTask.sendStatus(StepStatus.Canceled),
+            //   )
+            // ],
           );
           break;
         default:
