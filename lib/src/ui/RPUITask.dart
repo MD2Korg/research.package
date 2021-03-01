@@ -289,6 +289,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
 
     return WillPopScope(
       // onWillPop: () => blocTask.sendStatus(StepStatus.Canceled),
+       onWillPop: () {},
       child: Theme(
         data: Theme.of(context),
         child: Scaffold(
