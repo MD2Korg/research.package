@@ -189,7 +189,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
       switch (step.runtimeType) {
         case RPQuestionStep:
           return AppBar(
-            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
+            title: Text("Weekly assessment", style: TextStyle(color: Colors.black),),
 //            title: Text(recentTaskProgress != null ? "${recentTaskProgress?.current} ${locale?.translate('of') ?? 'of'} ${recentTaskProgress?.total}" : ""),
             automaticallyImplyLeading: true,
             // actions: <Widget>[
@@ -205,7 +205,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
           break;
         case RPFormStep:
           return AppBar(
-            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
+            title: Text("Weekly assessment", style: TextStyle(color: Colors.black),),
 //            title: Text(recentTaskProgress != null ? "${recentTaskProgress?.current} ${locale?.translate('of') ?? 'of'} ${recentTaskProgress?.total}" : ""),
             automaticallyImplyLeading: false,
             // actions: <Widget>[
@@ -221,7 +221,7 @@ class _RPUITaskState extends State<RPUITask> with CanSaveResult {
           break;
         case RPInstructionStep:
           return AppBar(
-            title: Text("Weekly assesment", style: TextStyle(color: Colors.black),),
+            title: Text("Weekly assessment", style: TextStyle(color: Colors.black),),
             automaticallyImplyLeading: false,
             // actions: <Widget>[
             //   IconButton(
